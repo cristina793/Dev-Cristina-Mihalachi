@@ -3,17 +3,10 @@
     --secondary-color: #f5f2fe;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   }
-  .btn {
-    background-color: var(--primary-color);
-    box-shadow: var(--box-shadow);
-    border: none;
-  }
-  .btn:hover {
-    color: blue;
-  }
+
   body {
-    margin-top: 100px;
-    max-width: 800 px;
+    margin: 100px 0;
+   
   }
   
   h1,
@@ -36,9 +29,6 @@
   }
   
   p {
-    background: var(--secondary-color);
-    padding: 20px;
-    border-radius: 4px;
     font-size: 18px;
     line-height: 1.5;
   }
@@ -51,21 +41,24 @@
   
   .navigation-links a {
     margin: 20px;
+  }
+  .primary-link {
     border-radius: 4px;
     padding: 20px 15px;
     text-decoration: none;
     text-transform: capitalize;
-  }
-  
-  .contact-link {
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
     color: white;
   }
+  .primary-link:hover{color: white;}
   
-  .about-link {
+  .secondary-link {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    padding:20px 15px;
+    text-decoration: none;
   }
   
   .homepage-link {
@@ -75,12 +68,12 @@
   }
   
   .about-paragraphs {
-    display: flex;
+  
     margin: 30px 0;
   }
   
   .about-paragraphs p {
-    margin: 30px 80px;
+    margin: 10px;
   }
   
   .email-link {
@@ -94,38 +87,26 @@
   .email-link:hover {
     text-decoration: underline;
   }
-  .container {
-    width: 100%;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-size: 18px;
-    line-height: 1.5;
-    background: none;
-  }
-  h2 {
-    font-size: 48px;
-  }
-  .text-center {
-    text-align: center !important;
-  }
-  @media(max-width:700px){
+
+  @media(max-width:576px ){
    
-h1{font-size: 24px;}
-   
-    .btn{display: block;
-      margin-left: 150px;
-      text-align: center;
-      width: 50%;
-    }
+h1{
+  font-size: 48px;
+line-height: 1.5;
+}
+h2{
+  font-size: 32px;
+  text-align: center;
+}
+
+p{
+  text-align: center;}
+
+.project-link {
+  display: block;
+  text-align: center;
+  margin: 0 20px;
+}
    
 }
-  
+ 
